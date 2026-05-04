@@ -5,13 +5,6 @@ import { Toaster } from '@/components/ui/sonner'
 export const metadata: Metadata = {
   title: 'Surbhi Sharma - Data Analyst | Power BI Developer | SQL Enthusiast',
   description: 'Portfolio of Surbhi Sharma - Data Analyst skilled in SQL, Power BI, and data analytics, transforming raw data into actionable insights.',
-  icons: {
-    icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon.ico' },
-    ],
-  },
 }
 
 
