@@ -1,0 +1,42 @@
+import type { Metadata } from 'next'
+import './globals.css'
+import { Toaster } from '@/components/ui/sonner'
+
+export const metadata: Metadata = {
+  title: 'Surbhi Sharma - Data Analyst | Power BI Developer | SQL Enthusiast',
+  description: 'Portfolio of Surbhi Sharma - Data Analyst skilled in SQL, Power BI, and data analytics, transforming raw data into actionable insights.',
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico' },
+    ],
+  },
+}
+
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+          <Toaster 
+            position="top-right"
+            richColors
+            theme="dark"
+            toastOptions={{
+              style: {
+                background: 'rgba(39, 39, 42, 0.95)',
+                border: '1px solid rgba(63, 63, 70, 0.5)',
+                color: 'white',
+              },
+            }}
+          />
+      </body>
+    </html>
+  )
+}
